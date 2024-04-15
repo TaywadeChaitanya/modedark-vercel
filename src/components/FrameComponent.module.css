@@ -1,0 +1,87 @@
+.body,
+.h2 {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.06em;
+  line-height: 62px;
+}
+.body {
+  font-size: var(--body-large-size);
+  letter-spacing: -0.04em;
+  line-height: 31px;
+  font-family: var(--body-bold);
+}
+.cardElements,
+.codingHustlers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cardElements {
+  align-self: stretch;
+  gap: var(--gap-xl);
+}
+.codingHustlers {
+  width: 540px;
+  max-width: 100%;
+}
+.cardElements1 {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--gap-base);
+  font-size: var(--h5-size);
+}
+.cardElements1,
+.codingHustlersParent,
+.desktopInner {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.codingHustlersParent {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-47xl);
+}
+.desktopInner {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-25xl) var(--padding-126xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--h2-size);
+  color: var(--color-white);
+  font-family: var(--body-small-tag);
+}
+@media screen and (max-width: 1200px) {
+  .codingHustlersParent {
+    gap: var(--gap-14xl);
+  }
+
+}
+@media screen and (max-width: 810px) {
+  .codingHustlersParent {
+    gap: var(--gap-base);
+  }
+  .desktopInner {
+    padding-left: var(--padding-3xl);
+    padding-right: var(--padding-3xl);
+    padding-bottom: var(--padding-75xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 390px) {
+  .h2 {
+    font-size: var(--font-size-13xl);
+    line-height: 36px;
+  }
+  .body {
+    font-size: var(--h5-size);
+    line-height: 25px;
+  }
+}
